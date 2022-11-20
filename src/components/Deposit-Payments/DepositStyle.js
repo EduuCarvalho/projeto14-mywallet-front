@@ -20,7 +20,8 @@ export const TypeTittle = styled.div`
         img{
             width:23px;
             height:24px;
-            color: #FFFFFF;
+            
+            
         }
 `
 

@@ -1,5 +1,4 @@
-import { TypeTittle } from "./DepositStyle";
-import { PaymentContainer } from "./DepositStyle";
+import { TypeTittle,PaymentContainer } from "./DepositStyle";
 import undoImg from "./img/undo.svg";
 
 export default function PaymentPage() {

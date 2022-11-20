@@ -6,6 +6,8 @@ import SignUpPage from  "../SignUpPage/SignUpPage.js"
 import PaymentsHistoryPage  from "../PaymentsHistory/PaymentsHistoryPage .js";
 import DepositPage from "../Deposit-Payments/DepositPage.js";
 import PaymentPage from "../Deposit-Payments/PaymentPage.js";
+import React from "react";
+import { AuthProviderToken } from "../../context/userContext.js";
 
 
 export default function App() {
@@ -14,6 +16,7 @@ export default function App() {
     return (
         <BrowserRouter>
         <GlobalStyle/>
+        <AuthProviderToken>
         <Pages>
             <Routes>
                 <Route path="/" element={<LoginPage/>}/>
@@ -25,6 +28,7 @@ export default function App() {
             </Routes>
 
         </Pages>
+        </AuthProviderToken>
         </BrowserRouter>
     )
 }

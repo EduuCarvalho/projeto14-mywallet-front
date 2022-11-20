@@ -11,7 +11,7 @@ export const TittleMyWallet = styled.h1`
     margin-bottom:24px;
 `
 
-export const UserLoginInforContainer = styled.div`
+export const UserLoginInforContainer = styled.form`
     width:326px;
     display:flex;
     flex-direction:column;
