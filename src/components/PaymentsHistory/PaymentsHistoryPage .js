@@ -3,6 +3,7 @@ import logOutImg from "./img/Vector.png";
 import valueInImg from "./img/addcircle.svg";
 import ValueOutImg from "./img/removecircle.svg";
 
+
 export default function PaymentsHistoryPage () {
     return(
         <>
