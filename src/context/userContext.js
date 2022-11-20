@@ -5,17 +5,19 @@ const AuthContext = createContext();
 
 export const AuthProviderToken = (props) => {
 
-    const [userToken , setUserToken] = useState ({
+    const [userSessionInfo , setUserSessionInfo] = useState ({
         token:"",
+        name:""
     })
-
+    console.log("sessioninfo", userSessionInfo)
+   
     const [logInObj, setLogInObj] = useState ({
         email: "",
 	    password: ""
     })
 
     return (
-        <AuthContext.Provider value = {{ userToken,setUserToken,logInObj, setLogInObj}}>
+        <AuthContext.Provider value = {{ userSessionInfo , setUserSessionInfo,logInObj, setLogInObj}}>
             {props.children}
         </AuthContext.Provider>
     )

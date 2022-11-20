@@ -6,7 +6,7 @@ import { BASE_URL } from "../../constants/url";
 
 export default function LoginPage(){
 
-    const {userToken,setUserToken,logInObj, setLogInObj} = useAuth();
+    const {setUserSessionInfo,logInObj, setLogInObj} = useAuth();
 
     let navigate = useNavigate();
 
@@ -21,15 +21,13 @@ export default function LoginPage(){
     e.preventDefault()
     axios.post(`${BASE_URL}/signin`,logInObj)
         .then((res)=>{
-
-            setUserToken(
-                {headers: {
-                    "Authorization": `Bearer ${res.data.token}`
-                }
-            })
-            
-            navigate("/paymentshistory")
-            console.log(userToken)
+           console.log("token e name",res.data)
+           setUserSessionInfo(
+                    {token:(res.data.token),
+                        name:(res.data.name)
+                    }
+            )     
+            navigate("/paymentshistory")   
         })
         .catch((err)=>{
         alert("E-mail e senha inválidos!!!")
