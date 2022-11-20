@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import GlobalStyle from "../../Style/GlobalStyle.js";
 import styled from "styled-components";
 import LoginPage from "../Login/LoginPage.js"
+import SignUpPage from  "../SignUpPage/SignUpPage.js"
 
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <Pages>
             <Routes>
                 <Route path="/" element={<LoginPage/>}/>
+                <Route path="/signup" element={<SignUpPage/>}/>
             </Routes>
 
         </Pages>
