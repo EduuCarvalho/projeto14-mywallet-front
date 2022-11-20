@@ -7,7 +7,7 @@ export const TypeTittle = styled.div`
     justify-content:space-between;
     align-items:center;
     margin-top:25px;
-    margin-bottom:22px;
+    margin-bottom:40px;
 
         h1{
             font-style: normal;
