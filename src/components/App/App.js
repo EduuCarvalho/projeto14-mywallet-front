@@ -3,7 +3,9 @@ import GlobalStyle from "../../Style/GlobalStyle.js";
 import styled from "styled-components";
 import LoginPage from "../Login/LoginPage.js"
 import SignUpPage from  "../SignUpPage/SignUpPage.js"
-import RegisterPage from "../Register/RegisterPage.js";
+import PaymentsHistoryPage  from "../PaymentsHistory/PaymentsHistoryPage .js";
+import DepositPage from "../Deposit-Payments/DepositPage.js";
+import PaymentPage from "../Deposit-Payments/PaymentPage.js";
 
 
 export default function App() {
@@ -16,7 +18,10 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<LoginPage/>}/>
                 <Route path="/signup" element={<SignUpPage/>}/>
-                <Route path="/register" element={<RegisterPage/>}/>
+                <Route path="/paymentshistory" element={<PaymentsHistoryPage />}/>
+                <Route path="/deposit" element={<DepositPage/>}/>
+                <Route path="/payment" element={<PaymentPage/>}/>
+
             </Routes>
 
         </Pages>

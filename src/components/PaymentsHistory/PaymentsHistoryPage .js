@@ -1,9 +1,9 @@
-import { Header,EmptyResgiterContainer,AddRegisterContainer } from "./RegisterStyle";
+import { Header,EmptyResgiterContainer,AddRegisterContainer } from "./PaymentsHistoryStyle";
 import logOutImg from "./img/Vector.png";
 import valueInImg from "./img/addcircle.svg";
 import ValueOutImg from "./img/removecircle.svg";
 
-export default function RegisterPage() {
+export default function PaymentsHistoryPage () {
     return(
         <>
         <Header>
