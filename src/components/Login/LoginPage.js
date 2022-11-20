@@ -6,7 +6,7 @@ import { BASE_URL } from "../../constants/url";
 
 export default function LoginPage(){
 
-    const {setUserToken,logInObj, setLogInObj} = useAuth();
+    const {userToken,setUserToken,logInObj, setLogInObj} = useAuth();
 
     let navigate = useNavigate();
 
@@ -27,11 +27,14 @@ export default function LoginPage(){
                     "Authorization": `Bearer ${res.data.token}`
                 }
             })
+            
             navigate("/paymentshistory")
+            console.log(userToken)
         })
-        .catch((err)=>
-        console.log(err))
-    
+        .catch((err)=>{
+        alert("E-mail e senha inválidos!!!")
+        console.log(err)
+        })
     }
 
     return(
