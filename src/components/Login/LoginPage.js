@@ -1,6 +1,6 @@
-import { TittleMyWallet, UserLoginInforContainer } from "./LoginStyle";
+import { TittleMyWallet, UserLoginInforContainer,StyledLink} from "./LoginStyle";
 import { useAuth } from "../../context/userContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import axios from "axios";
 import { BASE_URL } from "../../constants/url";
 
@@ -42,7 +42,7 @@ export default function LoginPage(){
                 <input placeholder = "E-mail" type="email" name="email" value={logInObj.email} onChange={handleLogIn} required ></input>
                 <input placeholder = "Senha" type="password" name="password" value = {logInObj.password} onChange={handleLogIn} required></input>
                 <button type="submit">Entrar</button>
-                <h1>Primeira vez? Cadastre-se!</h1>
+               <StyledLink to={'/signup'}><h1>Primeira vez? Cadastre-se!</h1></StyledLink> 
             </UserLoginInforContainer>
         </>
     )

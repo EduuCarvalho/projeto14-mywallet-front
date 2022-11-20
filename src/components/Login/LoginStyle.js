@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {  Link } from "react-router-dom"
 
 export const TittleMyWallet = styled.h1`
     font-family: 'Saira Stencil One';
@@ -60,4 +61,11 @@ export const UserLoginInforContainer = styled.form`
             font-family: 'Raleway';
         }
 
+`
+export const StyledLink = styled(Link)`
+text-decoration:none;
+
+&:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration:none;
+}
 `

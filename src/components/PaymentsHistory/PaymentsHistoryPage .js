@@ -2,13 +2,16 @@ import { Header,EmptyResgiterContainer,AddRegisterContainer } from "./PaymentsHi
 import logOutImg from "./img/Vector.png";
 import valueInImg from "./img/addcircle.svg";
 import ValueOutImg from "./img/removecircle.svg";
-
+import { useAuth } from "../../context/userContext";
 
 export default function PaymentsHistoryPage () {
+
+    const {userSessionInfo} = useAuth();
+
     return(
         <>
         <Header>
-            <h1>Olá, Fulano</h1>
+            <h1>Olá, {userSessionInfo.name}</h1>
             <img src={logOutImg} alt="logOut"/>
         </Header>
         <EmptyResgiterContainer>

@@ -1,4 +1,5 @@
 import styled from  "styled-components";
+import {  Link } from "react-router-dom"
 
 export const SingUpInforContainer = styled.div`
     width:326px;
@@ -46,6 +47,14 @@ export const SingUpInforContainer = styled.div`
             line-height: 18px;
             color: #FFFFFF;
             font-family: 'Raleway';
+           
         }
 
 `
+       export const StyledLink = styled(Link)`
+            text-decoration:none;
+
+            &:focus, &:hover, &:visited, &:link, &:active {
+                text-decoration:none;
+            }
+        `

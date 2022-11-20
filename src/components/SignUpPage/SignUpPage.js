@@ -1,8 +1,12 @@
 import { TittleMyWallet } from "../Login/LoginStyle"
-import { SingUpInforContainer } from "../SignUpPage/SignUpStyle.js"
+import { SingUpInforContainer, StyledLink } from "../SignUpPage/SignUpStyle.js"
+
 
 
 export default function SignUpPage() {
+
+   
+
     return (
         <>
             <TittleMyWallet>MyWallet</TittleMyWallet>
@@ -12,7 +16,7 @@ export default function SignUpPage() {
                 <input placeholder="Senha" type="password"></input>
                 <input placeholder="Confirme a senha" type="password"></input>
                 <button>Cadastrar</button>
-                <h1>Já tem uma conta? Entre agora!</h1>
+                <StyledLink to={'/'}><h1>Já tem uma conta? Entre agora!</h1></StyledLink >
             </SingUpInforContainer>
         </>
     )
