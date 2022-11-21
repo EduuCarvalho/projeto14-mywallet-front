@@ -51,34 +51,50 @@ export const EmptyResgiterContainer = styled.div`
         height:446px;
         border-radius: 5px;
         width:326px;
-        display:flex;
         margin-bottom:13px;
         display:flex;
-        justify-content:space-evenly;
-       
-            div{
-                width:50px;
-                background-color:red;
-            }
-            p{
-                width:200px;
-                background-color:orange;
-            }
-
-            h1{
-                width:56px;
-                background-color:yellow;
-            }
+        flex-direction:column;
+        align-items:space-evenly;
+        padding:23px 10px;
+        position:relative;
+            
+                
     `
 
 
+export const TransactionItem = styled.div`
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:10px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        
+            
+       
+            h2{
+                width:50px;
+                color: #C6C6C6;
+            }
+            p{
+                width:200px;
+               
+            }
 
+            h1{
+                color:${props=>props.type=== "deposit"? "#03AC00":"#C70000"};
+            
+            }
+`
 
     export const AddRegisterContainer = styled.div`
     width:326px;
     height:114px;
     display:flex;
     justify-content:space-between;
+    
     
         
         div{
@@ -106,6 +122,38 @@ export const EmptyResgiterContainer = styled.div`
             padding:10px;
         }
     `
+
+    export const Balance = styled.div`
+            display:flex;
+            justify-content:space-between;
+            padding:10px;
+            width:326px;
+            font-style: normal;
+            font-size: 17px;
+            line-height: 20px;
+            font-family: 'Raleway';
+            position:absolute;
+            bottom:0;
+            right:0;
+            
+
+                h1{
+                    color: #000000;
+                    font-weight: 700;
+                }
+
+                p{
+                    font-weight: 400;
+                    color:${props=>props.result<0? "#C70000":"#03AC00"};
+                }
+        
+    `
+
+
+
+
+
+
     export const StyledLink = styled(Link)`
     text-decoration:none;
 
