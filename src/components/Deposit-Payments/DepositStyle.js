@@ -26,7 +26,7 @@ export const TypeTittle = styled.div`
         }
 `
 
-export const PaymentContainer = styled.div`
+export const PaymentContainer = styled.form`
     width:326px;
     display:flex;
     flex-direction:column;

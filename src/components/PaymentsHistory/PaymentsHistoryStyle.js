@@ -46,6 +46,34 @@ export const EmptyResgiterContainer = styled.div`
 
         }
     `
+    export const TransactionsContainer = styled.div`
+        background: #FFFFFF;
+        height:446px;
+        border-radius: 5px;
+        width:326px;
+        display:flex;
+        margin-bottom:13px;
+        display:flex;
+        justify-content:space-evenly;
+       
+            div{
+                width:50px;
+                background-color:red;
+            }
+            p{
+                width:200px;
+                background-color:orange;
+            }
+
+            h1{
+                width:56px;
+                background-color:yellow;
+            }
+    `
+
+
+
+
     export const AddRegisterContainer = styled.div`
     width:326px;
     height:114px;

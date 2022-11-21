@@ -4,8 +4,7 @@ import styled from "styled-components";
 import LoginPage from "../Login/LoginPage.js"
 import SignUpPage from  "../SignUpPage/SignUpPage.js"
 import PaymentsHistoryPage  from "../PaymentsHistory/PaymentsHistoryPage .js";
-import DepositPage from "../Deposit-Payments/DepositPage.js";
-import PaymentPage from "../Deposit-Payments/PaymentPage.js";
+import AddTransactionsPage from "../Deposit-Payments/AddTransactionsPage.js";
 import React from "react";
 import { AuthProviderToken } from "../../context/userContext.js";
 
@@ -22,9 +21,7 @@ export default function App() {
                 <Route path="/" element={<LoginPage/>}/>
                 <Route path="/signup" element={<SignUpPage/>}/>
                 <Route path="/paymentshistory" element={<PaymentsHistoryPage />}/>
-                <Route path="/deposit" element={<DepositPage/>}/>
-                <Route path="/payment" element={<PaymentPage/>}/>
-
+                <Route path="/addtransaction/:type" element={<AddTransactionsPage/>}/>
             </Routes>
 
         </Pages>
