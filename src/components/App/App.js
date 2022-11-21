@@ -39,5 +39,5 @@ const Pages = styled.div`
     align-items:center;
     background-color:#8C21BE;
     width:100vw;
-    height:100vw;
+    min-height:870px;
 `

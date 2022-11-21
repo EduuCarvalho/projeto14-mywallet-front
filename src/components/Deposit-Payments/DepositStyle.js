@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const TypeTittle = styled.div`
     width:326px;
@@ -64,4 +65,11 @@ export const PaymentContainer = styled.div`
             font-style: normal;
             font-family: 'Raleway';
         }
+` 
+export const StyledLink = styled(Link)`
+text-decoration:none;
+
+&:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration:none;
+}
 `

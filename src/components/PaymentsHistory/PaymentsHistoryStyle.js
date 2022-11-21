@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const Header = styled.div`
     width:326px;
     height:31px;
@@ -78,4 +78,10 @@ export const EmptyResgiterContainer = styled.div`
             padding:10px;
         }
     `
-    
+    export const StyledLink = styled(Link)`
+    text-decoration:none;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration:none;
+    }
+`

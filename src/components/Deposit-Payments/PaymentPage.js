@@ -1,4 +1,4 @@
-import { TypeTittle,PaymentContainer } from "./DepositStyle";
+import { TypeTittle,PaymentContainer,StyledLink  } from "./DepositStyle";
 import undoImg from "./img/undo.svg";
 
 export default function PaymentPage() {
@@ -7,7 +7,7 @@ export default function PaymentPage() {
         <>
             <TypeTittle>
                 <h1>Nova Saída</h1>
-                <img src={undoImg} alt= "Return Page"/>
+                <StyledLink to={'/paymentshistory'}><img src={undoImg} alt= "Return Page"/></StyledLink>
             </TypeTittle>
             <PaymentContainer>
                 <input placeholder="Valor" type="text"></input>
