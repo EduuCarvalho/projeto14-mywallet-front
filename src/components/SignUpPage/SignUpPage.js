@@ -28,12 +28,13 @@ export default function SignUpPage() {
         e.preventDefault()
         axios.post(`${BASE_URL}/signup`,userSignUp)
         .then((res)=>{
+            alert("Cadastro feito com sucesso!!!")
             console.log(res);
             navigate("/")})
     
 
         .catch((err)=>{
-        alert("Cadastro feito com sucesso!!!")
+        alert(err.response.data)
         console.log(err)})
     }
 
