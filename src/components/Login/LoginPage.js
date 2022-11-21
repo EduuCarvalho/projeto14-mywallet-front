@@ -26,7 +26,9 @@ export default function LoginPage(){
                     {token:(res.data.token),
                         name:(res.data.name)
                     }
-            )     
+            )
+            localStorage.setItem("token",res.data.token);
+            localStorage.setItem("name",res.data.name)    
             navigate("/paymentshistory")   
         })
         .catch((err)=>{

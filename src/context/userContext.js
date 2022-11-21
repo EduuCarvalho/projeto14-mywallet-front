@@ -6,8 +6,8 @@ const AuthContext = createContext();
 export const AuthProviderToken = (props) => {
 
     const [userSessionInfo , setUserSessionInfo] = useState ({
-        token:"",
-        name:""
+        token:localStorage.getItem("token"),
+        name:localStorage.getItem("name")
     })
     console.log("sessioninfo", userSessionInfo)
    
