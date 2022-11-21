@@ -1,7 +1,7 @@
 import styled from  "styled-components";
 import {  Link } from "react-router-dom"
 
-export const SingUpInforContainer = styled.div`
+export const SingUpInforContainer = styled.form`
     width:326px;
     display:flex;
     flex-direction:column;

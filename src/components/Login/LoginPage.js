@@ -30,7 +30,7 @@ export default function LoginPage(){
             navigate("/paymentshistory")   
         })
         .catch((err)=>{
-        alert("E-mail e senha inválidos!!!")
+        alert(err.response.data)
         console.log(err)
         })
     }
